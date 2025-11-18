@@ -1,0 +1,18 @@
+[build-system]
+requires = ["hatchling >= 1.26"]
+build-backend = "hatchling.build"
+
+[project]
+name = "rtmc_client"
+version = "0.0.1"
+description = "Client-side library for managing RTMC Cards"
+license = "BSD-2-Clause"
+license-files = ["LICENSE.txt"]
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Source = "https://github.com/theta-machines/rtmc-client"
