@@ -4,21 +4,6 @@ import rtmc_client as rtmc
 import socket
 
 @pytest.fixture
-def emulator():
-    api_token = "dummy_token"
-
-    # Start the emulator
-    emulator = rtmc.EmulationServer(api_token)
-    emulator.start()
-
-    try:
-        yield emulator
-    finally:
-        emulator.stop()
-
-
-
-@pytest.fixture
 def tcp_socket(emulator):
     # Create TCP client
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
